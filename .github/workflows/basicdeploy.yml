@@ -14,7 +14,6 @@ jobs:
     - shell: bash
       run: |
         zip -r -q app.zip .
-    - shell: bash
-      run: |
-        ls
-        pwd
+    - uses: miwebst/anotherdeploy@master
+      with:
+        azure_function_location: 'somewhere' 
