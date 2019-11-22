@@ -1,2 +1,2 @@
 # basicStaticSite
-A basic static site 5
+A basic static site 6
