@@ -16,7 +16,7 @@ jobs:
         zip -r -q app.zip .
     - uses: miwebst/anotherdeploy@master
       with:
-        azure_pages_contenthost: 'miwebstsslinux.azurewebsites.nett'
+        azure_pages_contenthost: 'miwebstsslinux.azurewebsites.net'
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN }}           
         app_artifact_location: 'app'
         api_artifact_location: 'api'
