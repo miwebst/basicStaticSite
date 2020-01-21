@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build And Deploy
       id: azurepagesbuilddeploy
-      uses: 
+      uses: miwebst/anotherdeploy@master
       with:
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_WONDERFUL-SAND-119FE34E }}
         action: 'upload'
@@ -31,7 +31,7 @@ jobs:
     steps:
     - name: Close Pull Request
       id: azurepagesclosepullrequest
-      uses: 
+      uses: miwebst/anotherdeploy@master
       with:
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_WONDERFUL-SAND-119FE34E }}
         action: 'close'
