@@ -20,7 +20,7 @@ jobs:
       id: azurepagesbuilddeploy
       uses: miwebst/anotherdeploy@master
       with:
-        azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_WONDERFUL-SAND-119FE34E }}
+        azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_WONDERFUL_SAND_119FE34E }}
         action: 'upload'
         app_source_location: 'app' # App Content Path
         api_source_location: 'api' # Api Content Path - optional
@@ -33,5 +33,5 @@ jobs:
       id: azurepagesclosepullrequest
       uses: miwebst/anotherdeploy@master
       with:
-        azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_WONDERFUL-SAND-119FE34E }}
+        azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_WONDERFUL_SAND_119FE34E }}
         action: 'close'
